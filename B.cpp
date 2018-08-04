@@ -2,13 +2,14 @@
 using namespace std;
 
 int main() {
-	long long int n,min = 1e9,res=-1;
+	long long n,a,min,res;
 	cin >> n;
+	min=1e9
+	res=-322;
 	for(int i=0; i<n; i++) {
-		long long int a;
 		cin >> a;
 		a-=i;
-		if(min>(a+n-1)/n) {
+		if (min>(a+n-1)/n) {
 			min=(a+n-1)/n;
 			res=i+1;
 		}
